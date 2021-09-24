@@ -12,7 +12,7 @@ const inversionPrincipante = 10000
 const inversionModerado = 50000
 
 
-if (inversion > 10000) {
+if (inversion > 10000 && inversion < 500000) {
     alert ("Felicitaciones, ya puedes empezar a invertir y hacer rendir tu dinero")
 } else if (inversion > 500000 && inversion < 1000000) {
     alert ("Invertí en CEDEARs de las compañias que se destacan en el mercado")

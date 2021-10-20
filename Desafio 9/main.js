@@ -1,28 +1,12 @@
+const parrafo = document.getElementById ("parrafo")
 
-const prueba = document.createElement ("h2")
-h2.setAttribute ("id", "elementoAgregado")
-h2.textContent = "Ingresa tu texto de prueba"
+const boton = document.getElementById ("btn")
 
-document.getElementById("tester").appendChild (prueba)
-console.log (prueba)
-
-class p {
-    constructor ({nombre, clase, peso}){
-        this.nombre = nombre;
-        this.clase = clase;
-        this.peso = peso
-    }
+const escribir = () => { 
+    let texto = alert ("El texto que probaste...")
+    parrafo.textContent = texto
 }
 
-const guardarTipografia = () => {
-
-    const test = new p ( 
-        {
-        nombre : document.getElementById("nombre").value,
-        estilo : document.getElementById("estilo").value,
-        peso : document.getElementById("peso").value,
-        }
-    )
-
-    return test
-}
+boton.addEventListener ("click", () => {
+    escribir ()
+}) 

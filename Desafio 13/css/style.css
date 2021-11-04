@@ -1,0 +1,15 @@
+/* @import url(//fonts.googleapis.com/earlyaccess/notosanstelugu.css); */
+ 
+.box1 {
+    display: none;
+    background-color: #F4F4FF;
+    height: 50px;
+    padding: 10px;
+}
+
+.btn1 {
+    color: #6439FF;
+    border: 1px solid #6439FF;
+    background-color: white;
+}
+

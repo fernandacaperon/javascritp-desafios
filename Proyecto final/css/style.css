@@ -1,3 +1,71 @@
-@import url(//fonts.googleapis.com/earlyaccess/notosanstelugu.css);
- 
+/* @import url(//fonts.googleapis.com/earlyaccess/notosanstelugu.css); */
+
+.title {
+    color: #6439FF;
+    font-weight: 100;
+    font-size: 80px;
+}
+
+h5 {
+    color: #6439FF;
+}
+
+h2 { 
+    font-weight: 100;
+    font-size: 100px;
+    color: #6439FF;
+
+}
+
+.box1 {
+    display: none;
+    background-color: #6439FF;
+    height: 80px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.btn1 {
+    color: white;
+    border: 1px solid #6439FF;
+    background-color: #6439FF;
+    border-radius: 3px 3px 0 0;
+    padding: 6px 12px;
+    width: 200px;
+}
+
+.boxTester {
+    background-color: white;
+    color: #6439FF;
+    height: 50px;
+    padding: 10px;
+}
+
+.btnTester {
+    color: #6439FF;
+    border: 1px solid #6439FF;
+    background-color: white;
+    border-radius: 3px;
+    padding: 6px 12px;
+}
+
+.textWhite {
+    color: white;
+}
+
+.contenedorTester {
+    background-color: #F4F4FF;
+    padding: 15px;
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+
+.print {
+    margin-top: 50px;
+    color: #6439FF;
+}
+
+/* color: #76f7b9; */
+
+
 

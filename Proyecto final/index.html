@@ -5,36 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Tester tipografico</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body class="p-4">
-    <h1>Proyecto Tester Tipográfico</h1>
-    <div class="mb-3 py-4" id="tester">
-        <label for="exampleFormControlInput1" class="form-label">Escribi el texto que queres probar</label>
-        <input type="test" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu texto">
+    <h1 class="title">Proyecto Tester Tipográfico</h1>
+   
+    <div class="contenedorTester"> 
+        <div>
+            <p> Escribi el texto que queres probar </p>
+            <input type="texto" id="textoPrueba" value="" class="form-control">
+        </div>
+        <div class="py-3">
+            <button onclick="test()" class="btnTester">Testear</button>
+        </div>
+        <div>
+            <p id="resultadoTest" class="boxTester "> </p>
+        </div>
     </div>
+
+    <div>
+        <button class="btn1"> New! </button>
+        <div class="box1"> 
+            <p class="textWhite"> Infografica! Nueva tipografia Sans para tus proyectos! </p>
+        </div>
+    </div>
+    
+    <div id="print" class="print"> 
+        <p></p>
+    </div>
+
     <div class="py-2">
-        <form action=" ">
-            <label for="nombre"> Tipografia</label>
-            <input type="text" id="nombre">
-            <label for="estilo"> Estilo</label>
-            <input type="text" id="estilo">
-            <label for="peso">Peso</label>
-            <input type="text" id="peso">
-        </form>
-    </div>
-    <p id="parrafo">  </p>
-    <button id="btn">Testear</button>
-    <div class="py-5">
         <div class="row">
-            <div class="card col">
+            <div class="card1 card col">
                 <div class="card-body">
                     <h5 class="card-title">Tipografia 1</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Autor</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class="card-link">Agregar al carrito</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <!-- <a href="#" class="card-link">Another link</a> -->
                 </div>
             </div>
             <div class="card col">
@@ -43,7 +52,7 @@
                     <h6 class="card-subtitle mb-2 text-muted">Autor</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class="card-link">Agregar al carrito</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <!-- <a href="#" class="card-link">Another link</a> -->
                 </div>
             </div>
             <div class="card col">
@@ -52,7 +61,7 @@
                     <h6 class="card-subtitle mb-2 text-muted">Autor</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class="card-link">Agregar al carrito</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <!-- <a href="#" class="card-link">Another link</a> -->
                 </div>
             </div>
             <div class="card col">
@@ -61,12 +70,13 @@
                     <h6 class="card-subtitle mb-2 text-muted">Autor</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class="card-link">Agregar al carrito</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <!-- <a href="#" class="card-link">Another link</a> -->
                 </div>
             </div>
         </div>
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./jquery.js"> </script>
     <script src="./main.js"> </script>
 </body>
 </html>

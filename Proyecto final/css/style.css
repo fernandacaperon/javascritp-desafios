@@ -4,6 +4,7 @@
     color: #6439FF;
     font-weight: 100;
     font-size: 80px;
+    margin-bottom: 5rem;
 }
 
 h5 {
@@ -12,7 +13,7 @@ h5 {
 
 h2 { 
     font-weight: 100;
-    font-size: 100px;
+    font-size: 50px;
     color: #6439FF;
 
 }
@@ -62,10 +63,38 @@ h2 {
 
 .print {
     margin-top: 50px;
-    color: #6439FF;
+    color: #86809c;
 }
 
 /* color: #76f7b9; */
 
 
+.box-option {
+    color: #6439FF;
+    border-color: #76f7b9;;
+    position: relative;
+    padding: .5rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: .25rem;
+    width: 10rem;
+}
 
+
+
+.form-box {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6439FF;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #76f7b9;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}

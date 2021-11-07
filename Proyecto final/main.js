@@ -20,13 +20,29 @@ function test() {
 
 
 
-  let cantidadTipografias = 15
-  localStorage.setItem ("catalogo", cantidadTipografias)
-  console.log (cantidadTipografias);
+let cantidadTipografias = 15
+localStorage.setItem ("catalogo", cantidadTipografias)
+console.log (cantidadTipografias);
 
 
+//json
 
-  function myFunction() {
-    var mylist = document.getElementById("myList");
-    document.getElementById("demo").value = mylist.options[mylist.selectedIndex].text;
+class Producto {
+  clasificacion (nombre, precio){
+    this.nombre = nombre;
+    this.precio = precio;
   }
+}
+
+let producto = new Producto ("Sans serif", 100)
+
+//paso de objeto a json
+
+console.log (JSON.stringify (producto)) 
+
+
+
+function myFunction() {
+  const mylist = document.getElementById("myList");
+  document.getElementById("demo").value = mylist.options[mylist.selectedIndex].text;
+}

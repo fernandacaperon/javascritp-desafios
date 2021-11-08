@@ -18,4 +18,20 @@ $(".box1").click(() => {
 });
 
 
+//se activa cuando paso el mousse 
+$(document).ready(function() {
+    $("input").on({
+      mouseenter: function() {
+         $(this).css({"font-family": "alegreya", "font-size": "200%"});
+      }
+    });    
+ });
 
+ $(document).ready(function() {
+    $("#resultadoTest").on({
+      mouseenter: function() {
+         $(this).css({"font-family": "alegreya", "font-size": "200%"});
+      }
+    });    
+ });
+ 

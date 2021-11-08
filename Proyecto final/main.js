@@ -12,12 +12,15 @@ const escribir = () => {
 // }) 
 
 
-
 function test() {
     var x = document.getElementById("textoPrueba").value;
     document.getElementById("resultadoTest").innerHTML = x;
   }
 
+function myFunction() {
+  const mylist = document.getElementById("myList");
+  document.getElementById("demo").value = mylist.options[mylist.selectedIndex].text;
+}
 
 
 let cantidadTipografias = 15
@@ -42,7 +45,3 @@ console.log (JSON.stringify (producto))
 
 
 
-function myFunction() {
-  const mylist = document.getElementById("myList");
-  document.getElementById("demo").value = mylist.options[mylist.selectedIndex].text;
-}

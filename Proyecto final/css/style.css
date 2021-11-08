@@ -1,4 +1,7 @@
-/* @import url(//fonts.googleapis.com/earlyaccess/notosanstelugu.css); */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Alegreya&family=Bitter:wght@100&family=Gochi+Hand&family=Open+Sans:wght@300&family=Piazzolla:wght@100&display=swap');
+
+/* font-family: 'Open Sans', sans-serif; */
 
 .title {
     color: #6439FF;
@@ -15,8 +18,58 @@ h2 {
     font-weight: 100;
     font-size: 50px;
     color: #6439FF;
-
 }
+
+.textWhite {
+    color: white;
+}
+
+.textVioleta {
+    color: #6439FF;
+}
+
+
+#alegreya {
+    font-family: 'Alegreya', serif;
+}
+
+#acme {
+    font-family: 'Acme', sans-serif;
+}
+
+#bitter {
+    font-family: 'Bitter', serif;
+}
+
+#gochi {
+    font-family: 'Gochi Hand', cursive;
+}
+
+#piazzolla {
+    font-family: 'Piazzolla', serif;
+}
+
+/* 
+.alegreya {
+    font-family: 'Alegreya', serif;
+}
+
+.ame {
+    font-family: 'Acme', sans-serif;
+}
+
+.bitter {
+    font-family: 'Bitter', serif;
+}
+
+.gochi {
+    font-family: 'Gochi Hand', cursive;
+}
+
+.piazzolla {
+    font-family: 'Piazzolla', serif;
+} */
+
 
 .box1 {
     display: none;
@@ -35,13 +88,6 @@ h2 {
     width: 200px;
 }
 
-.boxTester {
-    background-color: white;
-    color: #6439FF;
-    height: 50px;
-    padding: 10px;
-}
-
 .btnTester {
     color: #6439FF;
     border: 1px solid #6439FF;
@@ -50,12 +96,9 @@ h2 {
     padding: 6px 12px;
 }
 
-.textWhite {
-    color: white;
-}
-
-.textVioleta {
-    color: #6439FF;
+.print {
+    margin-top: 50px;
+    color: #86809c;
 }
 
 .contenedorTester {
@@ -66,13 +109,14 @@ h2 {
     color: #6439FF;
 }
 
-.print {
-    margin-top: 50px;
-    color: #86809c;
+.boxTester {
+    background-color: white;
+    color: #6439FF;
+    height: 50px;
+    padding: 10px;
 }
 
 /* color: #76f7b9; */
-
 
 .box-option {
     color: #6439FF;
@@ -84,6 +128,11 @@ h2 {
     width: 15rem;
 }
 
+.boxNews {
+    margin-top: 3rem;
+    background-color: #F4F4FF;
+    padding: 3rem;
+}
 
 
 .form-box {
@@ -121,11 +170,6 @@ h2 {
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-.boxNews {
-    margin-top: 3rem;
-    background-color: #F4F4FF;
-    padding: 3rem;
-}
 
 /* padding: 15px;
 margin-bottom: 40px;

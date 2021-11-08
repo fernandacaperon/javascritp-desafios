@@ -18,20 +18,30 @@ $(".box1").click(() => {
 });
 
 
-//se activa cuando paso el mousse 
-$(document).ready(function() {
-    $("input").on({
-      mouseenter: function() {
-         $(this).css({"font-family": "alegreya", "font-size": "200%"});
-      }
-    });    
- });
 
- $(document).ready(function() {
-    $("#resultadoTest").on({
-      mouseenter: function() {
-         $(this).css({"font-family": "alegreya", "font-size": "200%"});
-      }
-    });    
- });
- 
+ //se activa cuando paso el mousse - este funciona-este esta en el repo
+
+$(document).ready(function() {
+  $("#demo").on({
+    mouseenter: function() {
+       $(this).css({"font-family": "alegreya", "font-size": "200%"});
+    }
+  });    
+});
+
+
+$(document).ready(function() {
+  $("#textoPrueba").on({
+    mouseenter: function() {
+       $(this).css({"font-family": "alegreya", "font-size": "200%"});
+    }
+  });    
+});
+
+$(document).ready(function() {
+  $("#resultadoTest").on({
+    mouseenter: function() {
+       $(this).css({"font-family": "alegreya", "font-size": "200%"});
+    }
+  });    
+});

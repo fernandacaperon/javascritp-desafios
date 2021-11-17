@@ -19,7 +19,7 @@ $(".box1").click(() => {
 
 
 
- //se activa cuando paso el mousse - este funciona-este esta en el repo
+//se activa cuando paso el mousse - este funciona-este esta en el repo
 
 $(document).ready(function() {
   $("#demo").on({
@@ -28,7 +28,6 @@ $(document).ready(function() {
     }
   });    
 });
-
 
 $(document).ready(function() {
   $("#textoPrueba").on({
@@ -43,5 +42,5 @@ $(document).ready(function() {
     mouseenter: function() {
        $(this).css({"font-family": "alegreya", "font-size": "200%"});
     }
-  });    
+  }); 
 });

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Alegreya&family=Bitter:wght@100&family=Gochi+Hand&family=Open+Sans:wght@300&family=Piazzolla:wght@100&display=swap');
 
-/* font-family: 'Open Sans', sans-serif; */
 
 .title {
     color: #6439FF;
@@ -42,33 +41,12 @@ h2 {
 }
 
 #gochi {
-    font-family: 'Gochi Hand', cursive;
+    font-family: 'Gochi Hand';
 }
 
 #piazzolla {
     font-family: 'Piazzolla', serif;
 }
-
-/* 
-.alegreya {
-    font-family: 'Alegreya', serif;
-}
-
-.ame {
-    font-family: 'Acme', sans-serif;
-}
-
-.bitter {
-    font-family: 'Bitter', serif;
-}
-
-.gochi {
-    font-family: 'Gochi Hand', cursive;
-}
-
-.piazzolla {
-    font-family: 'Piazzolla', serif;
-} */
 
 
 .box1 {
@@ -115,8 +93,6 @@ h2 {
     height: 50px;
     padding: 10px;
 }
-
-/* color: #76f7b9; */
 
 .box-option {
     color: #6439FF;
@@ -170,7 +146,3 @@ h2 {
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-
-/* padding: 15px;
-margin-bottom: 40px;
-margin-top: 80px; */

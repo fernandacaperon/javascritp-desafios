@@ -2,26 +2,43 @@ const parrafo = document.getElementById ("parrafo")
 
 const boton = document.getElementById ("btn")
 
-const escribir = () => { 
-    let texto = alert ("El texto que probaste...")
-    parrafo.textContent = texto
-}
 
-// boton.addEventListener ("click", () => {
-//     escribir ()
-// }) 
+function cambiarTipografia () {
+  const select_tipografia = document.getElementById ("myList");
+  console.log (select_tipografia.value);
 
-
-function test() {
-    var x = document.getElementById("textoPrueba").value;
-    document.getElementById("resultadoTest").innerHTML = x;
+  if ("alegreya" == select_tipografia.value) {
+    document.getElementById ("resultado-cambiarTipografia").innerHTML = 'Alegreya';
+    document.getElementById('resultadoTest').style.fontFamily = select_tipografia.value;
+  }  
+  
+  if ("acme" == select_tipografia.value) {
+    document.getElementById ("resultado-cambiarTipografia").innerHTML = 'Acme';
+    document.getElementById('resultadoTest').style.fontFamily = select_tipografia.value;
   }
 
-function myFunction() {
-  const mylist = document.getElementById("myList");
-  document.getElementById("demo").value = mylist.options[mylist.selectedIndex].text;
+  if ("bitter" == select_tipografia.value) {
+    document.getElementById ("resultado-cambiarTipografia").innerHTML = 'Bitter';
+    document.getElementById('resultadoTest').style.fontFamily = select_tipografia.value;
+  }
+
+  if ("Gochi Hand" == select_tipografia.value) {
+    document.getElementById ("resultado-cambiarTipografia").innerHTML = 'Gochi Hand';
+    document.getElementById('resultadoTest').style.fontFamily = select_tipografia.value;
+  }
+
+  if ("piazzolla" == select_tipografia.value) {
+    document.getElementById ("resultado-cambiarTipografia").innerHTML = 'Piazzolla';
+    document.getElementById('resultadoTest').style.fontFamily = select_tipografia.value;
+  }
 }
 
+function test() {
+  var x = document.getElementById("textoPrueba").value;
+  document.getElementById("resultadoTest").innerHTML = x;
+}
+
+// 
 
 let cantidadTipografias = 15
 localStorage.setItem ("catalogo", cantidadTipografias)
@@ -101,3 +118,7 @@ document.getElementById ("btn-form").addEventListener ("click", (e) => {
     }
   })
   
+
+  
+ 
+

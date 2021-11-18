@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Tester tipografico</title>
-    <!-- <link rel="stylesheet" href="css/ligth.css" id="linkTheme"> -->
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
@@ -19,16 +18,16 @@
     <div>
         <form>
             <p class="textVioleta">Selecciona una tipografia: </p>  
-            <select id="myList" onchange="myFunction()" class="box-option">
+            <select id="myList" onchange="cambiarTipografia();" class="box-option">
               <option></option>
               <option id="alegreya" value="alegreya">Alegreya</option>
               <option id="acme" value="acme">Acme</option>  
               <option id="bitter" value="bitter">Bitter</option>
-              <option id="gochi" value="gochi">Gochi</option>
+              <option id="gochi" value="Gochi Hand">Gochi</option>
               <option id="piazzolla" value="piazzolla">Piazzolla</option>
             </select>
         </form>
-        <p> <input type="text" id="demo" class="form-box"></p>      
+        <p id="resultado-cambiarTipografia"> <input type="text" id="demo" class="form-box"></p>      
     </div>
    
     <div class="contenedorTester"> 
@@ -63,7 +62,6 @@
                     <h6 class="card-subtitle mb-2 text-muted">Autor</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class="card-link">Agregar al carrito</a>
-                    <!-- <a href="#" class="card-link">Another link</a> -->
                 </div>
             </div>
             <div class="card col">
@@ -72,7 +70,6 @@
                     <h6 class="card-subtitle mb-2 text-muted">Autor</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class="card-link">Agregar al carrito</a>
-                    <!-- <a href="#" class="card-link">Another link</a> -->
                 </div>
             </div>
             <div class="card col">
@@ -81,7 +78,6 @@
                     <h6 class="card-subtitle mb-2 text-muted">Autor</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class="card-link">Agregar al carrito</a>
-                    <!-- <a href="#" class="card-link">Another link</a> -->
                 </div>
             </div>
             <div class="card col">
@@ -90,7 +86,6 @@
                     <h6 class="card-subtitle mb-2 text-muted">Autor</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class="card-link">Agregar al carrito</a>
-                    <!-- <a href="#" class="card-link">Another link</a> -->
                 </div>
             </div>
         </div>
@@ -101,13 +96,11 @@
         <form action="" method="get" id="form">
             <input type="text" name="nombre" class="form-box2" id="name">
             <input type="email" name="email" class="form-box2" id="email">
-            <!-- <input type="submit" name="submit" id="submit"> -->
             <button id="btn-form" class="btnTester"> Enviar </button>
         </form>
    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     <script src="./jquery.js"> </script>
     <script src="./main.js"> </script>
 </body>

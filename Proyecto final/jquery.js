@@ -6,7 +6,7 @@ console.log ($("h1"))
 
 
 $("#print").append ( 
-    '<p> Seguí testeando otras tipografías </p>'
+    '<p> Proximamente </p>'
 )
 
 $(".btn1").on ("click", () => {

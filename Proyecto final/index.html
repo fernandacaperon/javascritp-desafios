@@ -8,55 +8,97 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<body class="p-4">
+<body>
     <div class="d-flex justify-content-end">
-        <button id="theme" class="btnTester btn-sm" > <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="moon" class="svg-inline--fa fa-moon fa-w-16" role="img" style="width: 12px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z"></path></svg>
+        <button id="theme" class="btnTester btn-sm margin-body margin-top" > <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="moon" class="svg-inline--fa fa-moon fa-w-16" role="img" style="width: 12px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z"></path></svg>
         Dark</button>
     </div>
-    <h1 class="title">Proyecto Tester Tipográfico</h1>
+    <h1 class="title margin-body">Proyecto Tester Tipográfico</h1>
 
-    <div>
-        <form>
-            <p class="textVioleta">Selecciona una tipografia: </p>  
-            <select id="myList" onchange="cambiarTipografia();" class="box-option">
-              <option></option>
-              <option id="alegreya" value="alegreya">Alegreya</option>
-              <option id="acme" value="acme">Acme</option>  
-              <option id="bitter" value="bitter">Bitter</option>
-              <option id="gochi" value="Gochi Hand">Gochi</option>
-              <option id="piazzolla" value="piazzolla">Piazzolla</option>
-            </select>
-        </form>
-        <p id="resultado-cambiarTipografia"> <input type="text" id="demo" class="form-box"></p>      
-    </div>
-   
-    <div class="contenedorTester"> 
+    <div class="container">
         <div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <form>
+                    <p class="textVioleta">Tipografia: </p>  
+                    <select id="myList" onchange="cambiarTipografia();" class="box-option">
+                        <option></option>
+                        <option id="alegreya" value="alegreya">Alegreya</option>
+                        <option id="acme" value="acme">Acme</option>  
+                        <option id="bitter" value="bitter">Bitter</option>
+                        <option id="gochi" value="Gochi Hand">Gochi</option>
+                        <option id="piazzolla" value="piazzolla">Piazzolla</option>
+                    </select>
+                </form>
+                <p id="resultado-cambiarTipografia" class="textVioleta"> 
+                    <input type="text" id="demo" class="form-box">
+                </p> 
+            </div>
+            <div class="col">
+                <form>
+                    <p class="textVioleta">Cuerpo: </p>  
+                    <select name="" id="cuerpo" onchange="cambiarCuerpo();" class="box-option">
+                        <option value=""></option>
+                        <option id="9" value="9">9</option>
+                        <option id="10" value="10">10</option>
+                        <option id="13" value="13">13</option>
+                        <option id="16" value="16">16</option>
+                        <option id="18" value="18">18</option>
+                        <option id="24" value="24">24</option>
+                        <option id="32" value="32">32</option>
+                    </select>
+                </form>
+                <p id="resultado-cambiarCuerpo" class="textVioleta"> 
+                    <input type="text" id="demo-cuerpo" class="form-box"> 
+                </p>
+            </div>
+            <div class="col"> 
+                <form>
+                    <p class="textVioleta">Peso</p>
+                    <select name="" id="peso" onchange="cambiarPeso();" class="box-option">
+                        <option value=""></option>
+                        <option id="light" value="ligth">Light</option>
+                        <option id="regular" value="regular">Regular</option>
+                        <option id="bold" value="bold">Bold</option>
+                    </select>
+                    <p id="resultado-cambiarPeso" class="textVioleta"> 
+                        <input type="text" id="demo-peso" class="form-box">
+                    </p> 
+                </form>
+            </div>
+            <div class="col"> </div>
+            <div class="col"> </div>
+        </div>     
+    </div> 
+    <!-- termina div de container -->
+    <div class="contenedorTester"> 
+        <div class="margin-body">
             <p> Escribi el texto que queres probar </p>
             <input type="texto" id="textoPrueba" value="" class="form-control">
         </div>
-        <div class="py-3">
+        <div class="py-3 margin-body">
             <button onclick="test()" class="btnTester" id="#testear">Testear</button>
         </div>
-        <div>
+        <div class="margin-body">
             <p id="resultadoTest" class="boxTester"> </p>
         </div>
     </div>
 
-    <div>
+    <div class="margin-body">
         <button class="btn1"> New! </button>
         <div class="box1"> 
             <p class="textWhite"> Infografica! Nueva tipografia Sans para tus proyectos! </p>
         </div>
     </div>
     
-    <div id="print" class="print"> 
-        <p></p>
+    <div id="print" class="print margin-body"> 
+        <h2></h2>
     </div>
 
-    <div class="py-2">
+    <div class="container py-2 margin-body">
         <div class="row">
-            <div class="card1 card col">
+            <div class="card card col">
                 <div class="card-body">
                     <h5 class="card-title">Tipografia 1</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Autor</h6>
@@ -87,7 +129,7 @@
         </div>
     </div>
 
-   <div class="boxNews">
+   <div class="boxNews ">
         <h2>Suscribite a nuestro Newsletter</h2>
         <form action="" method="get" id="form">
             <input type="text" name="nombre" class="form-box2" id="name">
@@ -95,6 +137,7 @@
             <button id="btn-form" class="btnTester"> Enviar </button>
         </form>
    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./jquery.js"> </script>

@@ -6,7 +6,7 @@ console.log ($("h1"))
 
 
 $("#print").append ( 
-    '<p> Proximamente </p>'
+    '<h2> Proximamente </h2>'
 )
 
 $(".btn1").on ("click", () => {

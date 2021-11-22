@@ -29,7 +29,67 @@ function cambiarTipografia () {
 
   if ("piazzolla" == select_tipografia.value) {
     document.getElementById ("resultado-cambiarTipografia").innerHTML = 'Piazzolla';
-    document.getElementById('resultadoTest').style.fontFamily = select_tipografia.value;
+    document.getElementById ("resultado-cambiarTipografia").className = "box-option";
+    document.getElementById('resultadoTest').style.fontFamily = select_tipografia.value; 
+  }
+}
+
+function cambiarCuerpo (){
+  const select_cuerpo = document.getElementById ("cuerpo");
+  console.log (select_cuerpo.value);
+
+  if ("9" == select_cuerpo.value){
+    document.getElementById ("resultado-cambiarCuerpo").innerHTML = '9';
+    document.getElementById('resultadoTest').style.fontSize = "xx-small";
+  }
+
+  if ("10" == select_cuerpo.value){
+    document.getElementById ("resultado-cambiarCuerpo").innerHTML = '10';
+    document.getElementById('resultadoTest').style.fontSize = "x-small";
+  }
+
+  if ("13" == select_cuerpo.value){
+    document.getElementById ("resultado-cambiarCuerpo").innerHTML = '13';
+    document.getElementById('resultadoTest').style.fontSize = "small";
+  }
+
+  if ("16" == select_cuerpo.value){
+    document.getElementById ("resultado-cambiarCuerpo").innerHTML = '16';
+    document.getElementById('resultadoTest').style.fontSize = "medium";
+  }
+
+  if ("18" == select_cuerpo.value) {
+    document.getElementById ("resultado-cambiarCuerpo").innerHTML = '18px';
+    document.getElementById('resultadoTest').style.fontSize = "large";
+  }
+
+  if ("24" == select_cuerpo.value) {
+    document.getElementById ("resultado-cambiarCuerpo").innerHTML = '24px';
+    document.getElementById('resultadoTest').style.fontSize = "x-large";
+  }
+
+  if ("32" == select_cuerpo.value) {
+    document.getElementById ("resultado-cambiarCuerpo").innerHTML = '32px';
+    document.getElementById('resultadoTest').style.fontSize = "xx-large";
+  }
+}
+
+function cambiarPeso (){
+  const select_peso = document.getElementById ("peso");
+
+  if ("ligth" == select_peso.value){
+    document.getElementById ("resultado-cambiarPeso").innerHTML = '100';
+    document.getElementById('resultadoTest').style.fontWeight = "100";
+  }
+
+  if ("regular" == select_peso.value){
+    document.getElementById ("resultado-cambiarPeso").innerHTML = '400';
+    document.getElementById('resultadoTest').style.fontWeight = "400";
+  }
+
+  if ("bold" == select_peso.value){
+    document.getElementById ("resultado-cambiarPeso").innerHTML = '900';
+    document.getElementById('resultadoTest').style.fontWeight = "900";
   }
 }
 
@@ -118,7 +178,4 @@ document.getElementById ("btn-form").addEventListener ("click", (e) => {
     }
   })
   
-
-  
- 
 
